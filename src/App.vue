@@ -1,9 +1,18 @@
-<script setup>
-// import { RouterLink, RouterView } from 'vue-router'
+<script>
+import { RouterLink, RouterView } from 'vue-router'
+import Navbar from '@/components/Navbar.vue';
+
+export default {
+  components: {
+    Navbar
+  }
+}
 </script>
 
 <template>
-  <h1 class="is-size-1">Hello world!</h1>
+  <Navbar />
+
+  <RouterView />
 </template>
 
 <style scoped>
